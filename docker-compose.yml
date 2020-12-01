@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  vnc_chrome_jp:
+    image: vnc_chrome_jp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # entrypoint: ["bash"]
+    network_mode: "host"
+    tty: true
