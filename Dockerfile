@@ -3,7 +3,7 @@ FROM selenoid/vnc_chrome:87.0
 USER root
 
 RUN apt-get update \
- && apt-get install -y locales tzdata fonts-ipafont-gothic language-pack-ja-base language-pack-ja \
+ && apt-get install -y locales tzdata fonts-noto-cjk language-pack-ja-base language-pack-ja \
  && apt clean && apt autoclean \
  && rm -rf /var/lib/apt/lists/*
 
